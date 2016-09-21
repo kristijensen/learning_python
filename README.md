@@ -1,3 +1,3 @@
 # learning_python
 
-This to be for useful pieces of code
+This is to be for storage of useful bits of code
