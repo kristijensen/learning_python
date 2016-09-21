@@ -1,0 +1,16 @@
+# Function to generate nucleotide kmers of desired length
+def generate_kmers(length):
+  # List of nucleotides, a starting point for generating kmers of length
+  result = ['A','T','G','C']
+  # repeat for loop length less one times, each time this for loop starts over, result has been updated to the kmers of i length
+  for i in range(0, length - 1):
+    new_result = []
+    # Take each nucleotide in result
+    for kmer in result:
+      # and nucleotide in list of nucleotides
+      for base in ['A','T','G','C']:
+        #append each base onto the kmer currently indicated by the kmer
+        new_result.append(kmer + base)
+    #reassing the result list as the kmers made from the last recursive addition of each base
+    result = new_result
+  return result
